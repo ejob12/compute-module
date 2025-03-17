@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-2"
+  region = "us-east-1"
 }
 
 module "ec2_deployment" {
@@ -15,7 +15,7 @@ module "ec2_deployment" {
   root_volume_size  = 20
   ebs_volume_size   = 10
   tags = {
-    Environment = "dev"
+    Environment = "test"
     Terraform   = "true"
   }
 }
